@@ -1,0 +1,1 @@
+#self.driver.switch_to.alert.accept()
