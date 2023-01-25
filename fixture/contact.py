@@ -20,3 +20,13 @@ class ContactHelper:
         self.driver.find_element(By.ID, "streetname").click()
         self.driver.find_element(By.ID, "streetname").send_keys(contact.street)
         self.driver.find_element(By.CSS_SELECTOR, "span > span").click()
+
+
+    def Delete_first_contact(self):
+        self.driver = self.app.driver
+        self.driver.find_element(By.CSS_SELECTOR, "tbody>tr:nth-child(2)").click()
+        self.driver.find_element(By.CSS_SELECTOR, "div.field.row.end>a").click()
+        self.driver.switch_to.alert.accept()
+
+
+
